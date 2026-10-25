@@ -1,0 +1,118 @@
+<sorc-arena-diagram [layout]="layout()" />
+
+<fieldset class="radio-group">
+    <legend>Sorceress</legend>
+    
+    <input type="radio" id="sorcHidden" [formField]="form.sorceress" value="">
+    <label for="sorcHidden">Hidden</label>
+
+    <input type="radio" id="sorcCenter" [formField]="form.sorceress" value="center">
+    <label for="sorcCenter">Center</label>
+
+    <input type="radio" id="sorcA" [formField]="form.sorceress" value="A">
+    <label for="sorcA">Cannon A</label>
+
+    <input type="radio" id="sorcB" [formField]="form.sorceress" value="B">
+    <label for="sorcB">Cannon B</label>
+
+    <input type="radio" id="sorcC" [formField]="form.sorceress" value="C">
+    <label for="sorcC">Cannon C</label>
+
+    <input type="radio" id="sorcD" [formField]="form.sorceress" value="D">
+    <label for="sorcD">Cannon D</label>
+    
+    <input type="radio" id="sorcE" [formField]="form.sorceress" value="E">
+    <label for="sorcE">Cannon E</label>
+    
+    <input type="radio" id="sorcAttackC" [formField]="form.sorceress" value="attack-C">
+    <label for="sorcAttackC">Fleeing, Cannon C (normal)</label>
+    
+    <input type="radio" id="sorcAttackD" [formField]="form.sorceress" value="attack-D">
+    <label for="sorcAttackD">Fleeing, Cannon D (normal)</label>
+
+    <input type="radio" id="sorcAttackE" [formField]="form.sorceress" value="attack-E">
+    <label for="sorcAttackE">Fleeing, Cannon E (normal)</label>
+
+    <input type="radio" id="sorcRushC" [formField]="form.sorceress" value="attack-rush-C">
+    <label for="sorcRushC">Fleeing, Cannon C (rushed)</label>
+
+    <input type="radio" id="sorcRushD" [formField]="form.sorceress" value="attack-rush-D">
+    <label for="sorcRushD">Fleeing, Cannon D (rushed)</label>
+
+    <input type="radio" id="sorcRushE" [formField]="form.sorceress" value="attack-rush-E">
+    <label for="sorcRushE">Fleeing, Cannon E (rushed)</label>
+</fieldset>
+
+<fieldset class="radio-group">
+    <legend>Spyro</legend>
+
+    <input type="radio" id="spyroHidden" [formField]="form.spyro" value="">
+    <label for="spyroHidden">Hidden</label>
+
+    <input type="radio" id="spawn" [formField]="form.spyro" value="spawn">
+    <label for="spawn">Spawn</label>
+
+    <input type="radio" id="spyroA" [formField]="form.spyro" value="A">
+    <label for="spyroA">Cannon A</label>
+
+    <input type="radio" id="spyroB" [formField]="form.spyro" value="B">
+    <label for="spyroB">Cannon B</label>
+
+    <input type="radio" id="spyroC" [formField]="form.spyro" value="C">
+    <label for="spyroC">Cannon C</label>
+
+    <input type="radio" id="spyroD" [formField]="form.spyro" value="D">
+    <label for="spyroD">Cannon D</label>
+
+    <input type="radio" id="spyroE" [formField]="form.spyro" value="E">
+    <label for="spyroE">Cannon E</label>
+
+    <input type="radio" id="spyroDeadZoneC" [formField]="form.spyro" value="dead-zone-C">
+    <label for="spyroDeadZoneC">Dead Zone (C force)</label>
+
+    <input type="radio" id="spyroDeadZoneD" [formField]="form.spyro" value="dead-zone-D">
+    <label for="spyroDeadZoneD">Dead Zone (D force)</label>
+
+    <input type="radio" id="spyroDeadZoneE" [formField]="form.spyro" value="dead-zone-E">
+    <label for="spyroDeadZoneE">Dead Zone (E force)</label>
+</fieldset>
+
+<div class="vehicle-toggles">
+    <fieldset class="checkboxes">
+        <legend>Cannons</legend>
+    
+        <input type="checkbox" id="cannonA" [formField]="form.cannons.A">
+        <label for="cannonA">A</label>
+    
+        <input type="checkbox" id="cannonB" [formField]="form.cannons.B">
+        <label for="cannonB">B</label>
+    
+        <input type="checkbox" id="cannonC" [formField]="form.cannons.C">
+        <label for="cannonC">C</label>
+        
+        <input type="checkbox" id="cannonD" [formField]="form.cannons.D">
+        <label for="cannonD">D</label>
+    
+        <input type="checkbox" id="cannonE" [formField]="form.cannons.E">
+        <label for="cannonE">E</label>
+    </fieldset>
+
+    <fieldset class="checkboxes">
+        <legend>Tanks</legend>
+
+        <input type="checkbox" id="tankAB" [formField]="form.tanks['A-B']">
+        <label for="tankAB">Between A and B</label>
+
+        <input type="checkbox" id="tankBC" [formField]="form.tanks['B-C']">
+        <label for="tankBC">Between B and C</label>
+
+        <input type="checkbox" id="tankCD" [formField]="form.tanks['C-D']">
+        <label for="tankCD">Between C and D</label>
+
+        <input type="checkbox" id="tankDE" [formField]="form.tanks['D-E']">
+        <label for="tankDE">Between D and E</label>
+
+        <input type="checkbox" id="tankEA" [formField]="form.tanks['E-A']">
+        <label for="tankEA">Between E and A</label>
+    </fieldset>
+</div>

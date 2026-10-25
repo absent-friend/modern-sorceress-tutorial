@@ -1,0 +1,30 @@
+:host {
+    display: grid;
+    grid-template-columns: max-content max-content max-content;
+    justify-items: center;
+    gap: 1em;
+    margin-inline: auto;
+    width: max-content;
+}
+
+fieldset {
+    display: grid;
+    row-gap: 1em;
+    height: max-content;
+    align-items: center;
+    
+    &.radio-group, &.checkboxes {
+        grid-template-columns: auto 1fr;
+    
+        input {
+            margin: 0 8px 0 0;
+        }
+    }
+}
+
+.vehicle-toggles {
+    display: grid;
+    grid-template-columns: max-content max-content;
+    gap: 1em;
+    height: max-content;
+}

@@ -1,0 +1,19 @@
+<img ngSrc="/assets/images/arena-overhead.png" priority width="550" height="550">
+
+<div [style.visibility]="'hidden'">
+    <!-- icons with images, for preloading -->
+    <sorc-arena-icon icon="sorceress" [top]="0" [left]="0" />
+    <sorc-arena-icon icon="spyro" [top]="0" [left]="0" />
+    <sorc-arena-icon icon="cannon" [top]="0" [left]="0" />
+    <sorc-arena-icon icon="tank" [top]="0" [left]="0" />
+</div>
+
+@for (e of layout().elements; track e) {
+    <sorc-arena-icon 
+        [icon]="e.icon" 
+        [top]="e.top" 
+        [left]="e.left" 
+        [rotate]="e.rotate" 
+        [label]="e.label" 
+        [selected]="e.selected"/>
+}

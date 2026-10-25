@@ -1,0 +1,8 @@
+<img [ngSrc]="imageProperties().src" priority width="{{imageProperties().width}}" height="{{imageProperties().height}}" [style.rotate]="`${rotate() ?? 0}deg`">
+@if (label(); as label) {
+    <svg [ngClass]="{ 'label': true, 'selected': selected() }" [attr.viewBox]="`0 0 ${imageProperties().width} ${imageProperties().height}`">
+        <text [attr.x]="`${imageProperties().width / 2}`" [attr.y]="`${imageProperties().height / 2}`">
+            {{ label }}
+        </text>
+    </svg>
+}
